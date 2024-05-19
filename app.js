@@ -1,12 +1,13 @@
+let now = new Date();
+let copyright = document.getElementById('copyright');
+copyright.innerText = now.getFullYear();
+
 function myToDo() {
     let input = document.getElementById('input');
     let task = document.getElementById('task');
     let time = document.getElementById('time');
-    let copyright = document.getElementById('copyright');
     let error = document.getElementById('error');
-
-    let now = new Date();
-
+    
     if (input.value.trim() == '') {
         error.innerText = 'Please input the required field!';
     }
@@ -16,5 +17,4 @@ function myToDo() {
         input.value = '';
         error.innerText = '';
     }
-    copyright.innerText = now.getFullYear();
 }
