@@ -18,22 +18,26 @@
                 <div class="mb-4">
                     <h4 class="fw-bold mb-2 ms-3 mt-5">To-Do List <img class="size ms-2" src="./Asset/imgs/stack-of-books.png"></h4>
                 </div>
-                <div class="input-group mb-3 d-flex justify-content-between align-item-center">
-                    <input id="input" type="text" class="form-control bg-secondary-subtle text-secondary p-3 ms-3 mb-5 border border-0" placeholder="Add your task" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button onclick="myToDo();" class="btn btn-outline-secondary bg-danger text-white border border-0 mb-5" type="button" id="button-addon2">ADD</button>
+                <div class="input-group d-flex justify-content-between align-item-center">
+                    <input id="input" type="text" class="form-control bg-secondary-subtle text-secondary p-3 ms-3 border border-0" placeholder="Add your task" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="myToDo();" class="btn btn-outline-secondary bg-danger text-white border border-0" type="button" id="button-addon2">ADD</button>
                 </div>
+                <p class="mb-5 mt-3 ms-4 text-danger" id="error"></p>
                 <div class="d-md-flex justify-content-md-between chomu">
-                    <div>
+                    <div class="mt-4">
                         <h3 class="ms-4">Tasks</h3>
                         <p id="task" class="ms-4"></p>
                     </div>
-                    <div>
+                    <div class="mt-4">
                         <h3 class="ms-4">Time</h3>
                         <p id="time" class="ms-4"></p>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="bg-dark text-white text-center mt-5 w-50 m-auto rounded">
+            <p>Copyright © <span class="text-white" id="copyright"></span> Aftab Ahmed Soomro. All Rights Reseved.</p>
+        </footer>
     </div>  
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
