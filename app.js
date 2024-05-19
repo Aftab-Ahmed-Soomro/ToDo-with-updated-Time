@@ -3,6 +3,7 @@ let copyright = document.getElementById('copyright');
 copyright.innerText = now.getFullYear();
 
 function myToDo() {
+    let now = new Date();
     let input = document.getElementById('input');
     let task = document.getElementById('task');
     let time = document.getElementById('time');
